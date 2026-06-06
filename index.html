@@ -4,21 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CBT Try Out 5 - Olimpiade Matematika</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [["$", "$"], ["\(", "\)"]],
-                displayMath: [["$$", "$$"], ["\[", "\]"]],
-                processEscapes: true,
-                processEnvironments: true
-            },
-            options: {
-                skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"]
-            }
-        };
-    </script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; user-select: none; -webkit-user-select: none; }
         body {
@@ -252,7 +237,6 @@
         .type-isian { background: #9b59b6; }
     </style>
 <base target="_blank">
-<base target="_blank">
 </head>
 <body>
     <div class="watermark" id="watermark"></div>
@@ -305,7 +289,6 @@
     </main>
 
     <script>
-
     // ==================== KONFIGURASI ====================
     const EXAM_DURATION = 7200;
     const MAX_VIOLATIONS = 2;
@@ -318,131 +301,131 @@
             id: 1,
             type: "pg",
             question: "Diberikan sebuah segitiga siku-siku dengan panjang sisi-sisinya merupakan bilangan bulat. Jika nilai keliling segitiga tersebut secara numerik sama dengan nilai luasnya, tentukan nilai <b>keliling maksimum</b> yang mungkin dari segitiga tersebut.",
-            options: ["$24$", "$28$", "$30$", "$32$", "$36$"],
+            options: ["24", "28", "30", "32", "36"],
             correct: 2
         },
         {
             id: 2,
             type: "pg",
-            question: "Tentukan nilai $n$ <b>terbesar</b> sedemikian sehingga terdapat sebuah persegi panjang dengan panjang sisi bilangan bulat $a$ dan $b$ yang memenuhi ketentuan: luas persegi panjang tersebut adalah $n$ dan kelilingnya adalah $2n - 10$.",
-            options: ["$10$", "$12$", "$14$", "$16$", "$18$"],
+            question: "Tentukan nilai n <b>terbesar</b> sedemikian sehingga terdapat sebuah persegi panjang dengan panjang sisi bilangan bulat a dan b yang memenuhi ketentuan: luas persegi panjang tersebut adalah n dan kelilingnya adalah 2n - 10.",
+            options: ["10", "12", "14", "16", "18"],
             correct: 2
         },
         {
             id: 3,
             type: "pg",
-            question: "Diberikan sebuah barisan bilangan bulat $a_1, a_2, \dots, a_n$ yang memenuhi $-1 \le a_i \le 2$ untuk setiap $i = 1, 2, \dots, n$. Diketahui pula bahwa barisan tersebut memenuhi dua persamaan berikut:<br>$a_1 + a_2 + \dots + a_n = 19$<br>$a_1^2 + a_2^2 + \dots + a_n^2 = 99$<br>Tentukan <b>nilai maksimum</b> yang mungkin dari $a_1^3 + a_2^3 + \dots + a_n^3$.",
-            options: ["$121$", "$125$", "$133$", "$144$", "$150$"],
+            question: "Diberikan sebuah barisan bilangan bulat a₁, a₂, ..., aₙ yang memenuhi -1 ≤ aᵢ ≤ 2 untuk setiap i = 1, 2, ..., n. Diketahui pula bahwa barisan tersebut memenuhi dua persamaan berikut:<br><br>a₁ + a₂ + ... + aₙ = 19<br>a₁² + a₂² + ... + aₙ² = 99<br><br>Tentukan <b>nilai maksimum</b> yang mungkin dari a₁³ + a₂³ + ... + aₙ³.",
+            options: ["121", "125", "133", "144", "150"],
             correct: 2
         },
         {
             id: 4,
             type: "pg",
-            question: "Misalkan $a, b, c$ adalah panjang sisi-sisi suatu segitiga yang membentuk barisan aritmatika dengan beda $d > 0$. Jika diketahui bahwa $a, b, c$ adalah bilangan bulat dan luas segitiga tersebut juga merupakan bilangan bulat, tentukan nilai <b>keliling minimum</b> yang mungkin dari segitiga tersebut.",
-            options: ["$10$", "$11$", "$12$", "$14$", "$16$"],
+            question: "Misalkan a, b, c adalah panjang sisi-sisi suatu segitiga yang membentuk barisan aritmatika dengan beda d > 0. Jika diketahui bahwa a, b, c adalah bilangan bulat dan luas segitiga tersebut juga merupakan bilangan bulat, tentukan nilai <b>keliling minimum</b> yang mungkin dari segitiga tersebut.",
+            options: ["10", "11", "12", "14", "16"],
             correct: 2
         },
         {
             id: 5,
             type: "pg",
-            question: "Diberikan persegi panjang $ABCD$ serta dua buah segitiga sama sisi, yaitu $\triangle BCP$ dan $\triangle CDQ$ yang dibangun di luar persegi panjang. Diketahui panjang sisi $AB = 8$ dan panjang diagonal $AC = 10$. Jika jumlah luas $\triangle ACP$ dan luas $\triangle ACQ$ dapat dinyatakan dalam bentuk $m\sqrt{3} + n$, tentukan nilai dari <b>$m + n$</b>.",
-            options: ["$45$", "$47$", "$49$", "$51$", "$53$"],
+            question: "Diberikan persegi panjang ABCD serta dua buah segitiga sama sisi, yaitu △BCP dan △CDQ yang dibangun di luar persegi panjang. Diketahui panjang sisi AB = 8 dan panjang diagonal AC = 10. Jika jumlah luas △ACP dan luas △ACQ dapat dinyatakan dalam bentuk m√3 + n, tentukan nilai dari <b>m + n</b>.",
+            options: ["45", "47", "49", "51", "53"],
             correct: 2
         },
         {
             id: 6,
             type: "pg",
-            question: "Diberikan sebuah persegi panjang dengan panjang sisi-sisinya berbentuk bilangan bulat $x$ dan $y$. Sebuah lingkaran yang berpusat di titik asal $(0,0)$ memotong atau menyinggung batas persegi panjang tersebut. Jika koordinat titik-titik sudut persegi panjang seluruhnya merupakan bilangan bulat dan panjang diagonal persegi panjang sama dengan diameter lingkaran, tentukan <b>rasio antara luas lingkaran dengan luas persegi panjang minimum</b> yang terbentuk.",
-            options: ["$\dfrac{\pi}{2}$", "$\dfrac{25\pi}{48}$", "$\pi$", "$\dfrac{25\pi}{24}$", "$\dfrac{5\pi}{6}$"],
+            question: "Diberikan sebuah persegi panjang dengan panjang sisi-sisinya berbentuk bilangan bulat x dan y. Sebuah lingkaran yang berpusat di titik asal (0,0) memotong atau menyinggung batas persegi panjang tersebut. Jika koordinat titik-titik sudut persegi panjang seluruhnya merupakan bilangan bulat dan panjang diagonal persegi panjang sama dengan diameter lingkaran, tentukan <b>rasio antara luas lingkaran dengan luas persegi panjang minimum</b> yang terbentuk.",
+            options: ["π/2", "25π/48", "π", "25π/24", "5π/6"],
             correct: 1
         },
         {
             id: 7,
             type: "pg",
-            question: "Tentukan salah satu nilai dari bilangan irasional $x$ yang memenuhi syarat bahwa nilai dari $x^2 + 20x + 20$ dan $x^3 - 2020x + 1$ keduanya merupakan bilangan rasional.",
-            options: ["$-10 + \sqrt{430}$", "$-10 + 2\sqrt{430}$", "$-5 + \sqrt{430}$", "$-20 + \sqrt{430}$", "$10 - 2\sqrt{430}$"],
+            question: "Tentukan salah satu nilai dari bilangan irasional x yang memenuhi syarat bahwa nilai dari x² + 20x + 20 dan x³ - 2020x + 1 keduanya merupakan bilangan rasional.",
+            options: ["-10 + √430", "-10 + 2√430", "-5 + √430", "-20 + √430", "10 - 2√430"],
             correct: 1
         },
         {
             id: 8,
             type: "pg",
-            question: "Di dalam sebuah lingkaran dengan jari-jari $R = \sqrt{2}$, terdapat beberapa titik berwarna merah. Diketahui bahwa jarak antara dua titik merah mana pun selalu berupa bilangan bulat. Jika jumlah titik merah maksimum yang dapat ditempatkan di dalam lingkaran tersebut adalah $N$, tentukan nilai dari <b>luas lingkaran dibagi dengan nilai $N$</b> tersebut.",
-            options: ["$\dfrac{\pi}{4}$", "$\dfrac{\pi}{3}$", "$\dfrac{\pi}{2}$", "$\dfrac{2\pi}{3}$", "$\pi$"],
+            question: "Di dalam sebuah lingkaran dengan jari-jari R = √2, terdapat beberapa titik berwarna merah. Diketahui bahwa jarak antara dua titik merah mana pun selalu berupa bilangan bulat. Jika jumlah titik merah maksimum yang dapat ditempatkan di dalam lingkaran tersebut adalah N, tentukan nilai dari <b>luas lingkaran dibagi dengan nilai N</b> tersebut.",
+            options: ["π/4", "π/3", "π/2", "2π/3", "π"],
             correct: 2
         },
         {
             id: 9,
             type: "pg",
-            question: "Diberikan segitiga $ABC$ dengan panjang sisi-sisi $a, b, c$ yang merupakan tiga bilangan bulat berurutan ($a < b < c \le 20$). Jika panjang garis berat dari titik sudut $A$ ke sisi $BC$ bernilai rasional, tentukan <b>panjang garis berat $m_a$</b> tersebut.",
-            options: ["$8$", "$\dfrac{17}{2}$", "$\dfrac{19}{2}$", "$10$", "$\dfrac{21}{2}$"],
+            question: "Diberikan segitiga ABC dengan panjang sisi-sisi a, b, c yang merupakan tiga bilangan bulat berurutan (a < b < c ≤ 20). Jika panjang garis berat dari titik sudut A ke sisi BC bernilai rasional, tentukan <b>panjang garis berat mₐ</b> tersebut.",
+            options: ["8", "17/2", "19/2", "10", "21/2"],
             correct: 2
         },
         {
             id: 10,
             type: "pg",
-            question: "Misalkan $f: \mathbb{Z} \to \mathbb{Z}$ adalah fungsi yang memenuhi persamaan $f(a^2 + f(b)) = a f(a) + b + f(0)$. Jika untuk $a > 0$ fungsi bernilai positif, tentukan nilai dari <b>$f\left(\dfrac{1}{2}\right)$</b> jika fungsi tersebut diperluas ke domain bilangan rasional dengan mempertahankan karakteristik kelinearannya.",
-            options: ["$0$", "$\dfrac{1}{4}$", "$\dfrac{1}{2}$", "$\dfrac{3}{4}$", "$1$"],
+            question: "Misalkan f: Z → Z adalah fungsi yang memenuhi persamaan f(a² + f(b)) = a·f(a) + b + f(0). Jika untuk a > 0 fungsi bernilai positif, tentukan nilai dari <b>f(1/2)</b> jika fungsi tersebut diperluas ke domain bilangan rasional dengan mempertahankan karakteristik kelinearannya.",
+            options: ["0", "1/4", "1/2", "3/4", "1"],
             correct: 2
         },
         // === ISIAN SINGKAT (11-20) ===
         {
             id: 11,
             type: "isian",
-            question: "Diketahui $x$ dan $y$ adalah bilangan bulat positif yang memenuhi persamaan $x^4 + 4y^4 = p$ dengan $p$ adalah suatu bilangan prima. Tentukan nilai dari bilangan prima $p$ tersebut.",
+            question: "Diketahui x dan y adalah bilangan bulat positif yang memenuhi persamaan x⁴ + 4y⁴ = p dengan p adalah suatu bilangan prima. Tentukan nilai dari bilangan prima p tersebut.",
             answer: "5"
         },
         {
             id: 12,
             type: "isian",
-            question: "Tentukan banyaknya bilangan asli $n \le 221$ sehingga bentuk pecahan berikut menghasilkan bilangan bulat:<br>$$\dfrac{1^2 + 2^2 + 3^2 + \dots + n^2}{1 + 2 + 3 + \dots + n}$$",
+            question: "Tentukan banyaknya bilangan asli n ≤ 221 sehingga bentuk pecahan berikut menghasilkan bilangan bulat:<br><br>(1² + 2² + 3² + ... + n²) / (1 + 2 + 3 + ... + n)",
             answer: "74"
         },
         {
             id: 13,
             type: "isian",
-            question: "Diketahui bahwa $a, b, c$ adalah tiga bilangan bulat berbeda yang memenuhi sistem persamaan berikut:<br>$a + b + c = 0$<br>$a^3 + b^3 + c^3 = -90$<br>Tentukan nilai dari nilai mutlak <b>$|a^5 + b^5 + c^5|$</b>.",
+            question: "Diketahui bahwa a, b, c adalah tiga bilangan bulat berbeda yang memenuhi sistem persamaan berikut:<br><br>a + b + c = 0<br>a³ + b³ + c³ = -90<br><br>Tentukan nilai dari nilai mutlak <b>|a⁵ + b⁵ + c⁵|</b>.",
             answer: "1250"
         },
         {
             id: 14,
             type: "isian",
-            question: "Misalkan $x$ dan $y$ adalah bilangan bulat positif yang memenuhi persamaan $x^2 - 4xy + 5y^2 - 4y = 21$. Tentukan <b>banyaknya nilai $x + y$ berbeda</b> yang mungkin terbentuk dari seluruh solusi pasangan $(x,y)$ yang memenuhi.",
+            question: "Misalkan x dan y adalah bilangan bulat positif yang memenuhi persamaan x² - 4xy + 5y² - 4y = 21. Tentukan <b>banyaknya nilai x + y berbeda</b> yang mungkin terbentuk dari seluruh solusi pasangan (x,y) yang memenuhi.",
             answer: "4"
         },
         {
             id: 15,
             type: "isian",
-            question: "Tentukan banyaknya pasangan bilangan bulat $(x, y)$ yang memenuhi persamaan aljabar berikut:<br>$$x^2 - xy + y^2 = x + y$$",
+            question: "Tentukan banyaknya pasangan bilangan bulat (x, y) yang memenuhi persamaan aljabar berikut:<br><br>x² - xy + y² = x + y",
             answer: "6"
         },
         {
             id: 16,
             type: "isian",
-            question: "Misalkan $a, b, c$ adalah bilangan asli sedemikian sehingga memenuhi persamaan $a + 2b + 3c = 73$. Carilah nilai minimum yang mungkin dari bentuk $a^2 + b^2 + c^2$.",
+            question: "Misalkan a, b, c adalah bilangan asli sedemikian sehingga memenuhi persamaan a + 2b + 3c = 73. Carilah nilai minimum yang mungkin dari bentuk a² + b² + c².",
             answer: "381"
         },
         {
             id: 17,
             type: "isian",
-            question: "Sebuah kisi-kisi persegi berukuran $5 \times 5$ titik (total terdapat 25 titik dengan koordinat bulat) dibentuk pada bidang Kartesius. Berapa banyak segitiga dengan luas tepat $1$ satuan yang ketiga titik sudutnya dipilih dari 25 titik kisi tersebut?",
+            question: "Sebuah kisi-kisi persegi berukuran 5 × 5 titik (total terdapat 25 titik dengan koordinat bulat) dibentuk pada bidang Kartesius. Berapa banyak segitiga dengan luas tepat 1 satuan yang ketiga titik sudutnya dipilih dari 25 titik kisi tersebut?",
             answer: "204"
         },
         {
             id: 18,
             type: "isian",
-            question: "Sebuah papan catur berukuran $8 \times 8$ akan diwarnai. Berapa banyak cara memilih 3 kotak secara acak sedemikian sehingga ketiga titik pusat dari kotak-kotak terpilih tersebut membentuk sebuah segitiga siku-siku dengan panjang sisi-sisi (dalam satuan kotak) yang seluruhnya merupakan bilangan bulat?",
+            question: "Sebuah papan catur berukuran 8 × 8 akan diwarnai. Berapa banyak cara memilih 3 kotak secara acak sedemikian sehingga ketiga titik pusat dari kotak-kotak terpilih tersebut membentuk sebuah segitiga siku-siku dengan panjang sisi-sisi (dalam satuan kotak) yang seluruhnya merupakan bilangan bulat?",
             answer: "160"
         },
         {
             id: 19,
             type: "isian",
-            question: "Diberikan sebuah poligon beraturan dengan $n$ sisi ($n$-gon). Kita ingin mewarnai seluruh titik sudutnya menggunakan warna merah atau biru. Diketahui bahwa tidak ada 3 titik sudut dengan warna sama yang membentuk segitiga sama kaki. Tentukan nilai bilangan bulat $n$ <b>terbesar</b> yang mungkin agar konfigurasi pewarnaan ini dapat berhasil.",
+            question: "Diberikan sebuah poligon beraturan dengan n sisi (n-gon). Kita ingin mewarnai seluruh titik sudutnya menggunakan warna merah atau biru. Diketahui bahwa tidak ada 3 titik sudut dengan warna sama yang membentuk segitiga sama kaki. Tentukan nilai bilangan bulat n <b>terbesar</b> yang mungkin agar konfigurasi pewarnaan ini dapat berhasil.",
             answer: "8"
         },
         {
             id: 20,
             type: "isian",
-            question: "Sebuah kisi berbentuk segitiga sama sisi terdiri dari titik-titik yang berjarak 1 satuan. Misalkan terdapat sejumlah $k$ titik yang dipilih pada kisi tersebut. Jika kita menghubungkan titik-titik pilihan ini, akan terbentuk beberapa vektor. Diketahui bahwa tidak ada dua titik terpilih yang memiliki jarak berupa bilangan prima. Tentukan jumlah titik maksimum $k$ yang dapat dipilih jika daerah kisi tersebut dibatasi oleh sebuah segitiga besar berluas $25\sqrt{3}$.",
+            question: "Sebuah kisi berbentuk segitiga sama sisi terdiri dari titik-titik yang berjarak 1 satuan. Misalkan terdapat sejumlah k titik yang dipilih pada kisi tersebut. Jika kita menghubungkan titik-titik pilihan ini, akan terbentuk beberapa vektor. Diketahui bahwa tidak ada dua titik terpilih yang memiliki jarak berupa bilangan prima. Tentukan jumlah titik maksimum k yang dapat dipilih jika daerah kisi tersebut dibatasi oleh sebuah segitiga besar berluas 25√3.",
             answer: "22"
         }
     ];
@@ -519,10 +502,6 @@
         loadQuestion(0);
         startTimer();
         initSecurity();
-
-        if (window.MathJax && MathJax.typesetPromise) {
-            MathJax.typesetPromise();
-        }
     }
 
     // ==================== RENDER ====================
@@ -546,33 +525,33 @@
         const q = questions[idx];
         const container = document.getElementById("question-container");
 
-        let html = "<div class=\"question-box\">";
-        html += "<div class=\"question-number\">Soal " + q.id;
-        html += "<span class=\"type-badge " + (q.type === "pg" ? "type-pg" : "type-isian") + "\">";
-        html += (q.type === "pg" ? "Pilihan Ganda" : "Isian Singkat") + "</span></div>";
-        html += "<div class=\"question-text\">" + q.question + "</div>";
+        let html = '<div class="question-box">';
+        html += '<div class="question-number">Soal ' + q.id;
+        html += '<span class="type-badge ' + (q.type === "pg" ? "type-pg" : "type-isian") + '">';
+        html += (q.type === "pg" ? "Pilihan Ganda" : "Isian Singkat") + '</span></div>';
+        html += '<div class="question-text">' + q.question + '</div>';
 
         if (q.type === "pg") {
-            html += "<div class=\"options\">";
+            html += '<div class="options">';
             const letters = ["A", "B", "C", "D", "E"];
             q.options.forEach((opt, i) => {
                 const selected = answers[q.id] === i ? "selected" : "";
-                html += "<div class=\"option " + selected + "\" onclick=\"selectOption(" + i + ")\">";
-                html += "<div class=\"option-letter\">" + letters[i] + "</div>";
-                html += "<div>" + opt + "</div></div>";
+                html += '<div class="option ' + selected + '" onclick="selectOption(' + i + ')">';
+                html += '<div class="option-letter">' + letters[i] + '</div>';
+                html += '<div>' + opt + '</div></div>';
             });
-            html += "</div>";
+            html += '</div>';
         } else {
             const val = answers[q.id] || "";
-            html += "<input type=\"text\" class=\"input-answer\" id=\"input-" + q.id + "\" ";
-            html += "value=\"" + val + "\" placeholder=\"Ketik jawaban Anda...\" ";
-            html += "oninput=\"saveInput(" + q.id + ", this.value)\">";
+            html += '<input type="text" class="input-answer" id="input-' + q.id + '" ';
+            html += 'value="' + val + '" placeholder="Ketik jawaban Anda..." ';
+            html += 'oninput="saveInput(' + q.id + ', this.value)">';
         }
 
-        html += "<button class=\"flag-btn " + (flagged.has(q.id) ? "flagged" : "") + "\" ";
-        html += "onclick=\"toggleFlag(" + q.id + ")\">";
-        html += (flagged.has(q.id) ? "&#10003; Diberi Tanda" : "&#9873; Beri Tanda") + "</button>";
-        html += "</div>";
+        html += '<button class="flag-btn ' + (flagged.has(q.id) ? "flagged" : "") + '" ';
+        html += 'onclick="toggleFlag(' + q.id + ')">';
+        html += (flagged.has(q.id) ? "&#10003; Diberi Tanda" : "&#9873; Beri Tanda") + '</button>';
+        html += '</div>';
 
         container.innerHTML = html;
 
@@ -583,10 +562,6 @@
         document.getElementById("btn-prev").disabled = idx === 0;
         document.getElementById("btn-next").style.display = idx === questions.length - 1 ? "none" : "inline-block";
         document.getElementById("btn-submit").style.display = idx === questions.length - 1 ? "inline-block" : "none";
-
-        if (window.MathJax && MathJax.typesetPromise) {
-            MathJax.typesetPromise([container]);
-        }
     }
 
     function selectOption(optIdx) {
@@ -702,11 +677,11 @@
     function finishExam() {
         document.getElementById("result-modal").classList.remove("active");
         document.getElementById("main-content").innerHTML = 
-            "<div style=\"text-align:center;padding:50px;\">" +
-            "<h2 style=\"color:#27ae60;\">Ujian Selesai</h2>" +
-            "<p style=\"color:#bdc3c7;margin-top:20px;\">Terima kasih telah mengikuti Try Out 5.</p>" +
-            "<p style=\"color:#bdc3c7;\">Hasil telah tersimpan. Silakan tutup browser.</p>" +
-            "</div>";
+            '<div style="text-align:center;padding:50px;">' +
+            '<h2 style="color:#27ae60;">Ujian Selesai</h2>' +
+            '<p style="color:#bdc3c7;margin-top:20px;">Terima kasih telah mengikuti Try Out 5.</p>' +
+            '<p style="color:#bdc3c7;">Hasil telah tersimpan. Silakan tutup browser.</p>' +
+            '</div>';
         document.getElementById("main-header").style.display = "none";
     }
 
@@ -800,7 +775,6 @@
             navigator.clipboard.writeText("").catch(()=>{});
         }, 300);
 
-        // Anti screen recording: flash overlay (interval 8 detik, sangat halus)
         setInterval(() => {
             const flash = document.getElementById("flash-overlay");
             flash.style.opacity = "0.08";
